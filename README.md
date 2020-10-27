@@ -1,5 +1,5 @@
 # DevOps-ConfigurationManagement
-
+- "Configuration management (CM) is a systems engineering process for establishing and maintaining consistency of a product's performance, functional, and physical attributes with its requirements, design, and operational information throughout its life." https://www.upguard.com/blog/5-configuration-management-boss
 ## Ansible
 - Allows us to write code to install and deploy multiple servers consistently.
   - Instructions to automate IT setup
