@@ -34,32 +34,33 @@
   - AWS CloudFormation constructs and configures your stack resources that you have specified in your template
   
 - Two Major Components: Template and Stack
-  - Templates:
-   - Formatted text file in JSON or YAML language that describes your AWS infrastructure
-   - Use AWS CloudFormation Designer to create
-   - Consists of nine main objects:
-    - 1) Format Version: defines the capability of a template 
-    - 2) Description: any comments about the template is specified in the description
-    - 3) Metadata: used to provide further information using JSON or YAML objects
-    - 4) Parameters: customized, so each time you create or update your stack, parameter gives custom template runtime
-    - 5) Mapping: enables you to map keys to corresponding named value that you specify in conditional parameter
-    - 6) Conditions: used when you want to reuse the templates by creating resources in different context 
-    - 7) Transform: build simple declarative language for AWS CloudFormation and enables reuse of template components
-    - 8) Resource: declare the AWS resource that you want to create and specify in the stack (EC2, S3, etc)
-                 : logical IF and name specified + optional additional information
-    - 9) Output: describes the output values that you can import into other stacks or the values that are returned when users view their own stack property
-    - Template Resource Attributes:
-     - Create Policy: used when you want to delay on resource configuration actions before proceeding with stack creation 
-     - Deletion Policy: preserving and backing up of resource is possible when its stack is deleted
-     - Depends On: any user can define the creation of a specific resource followed by another resource 
-     - Metadata: helps you associate a resource with structured data
-     - Update Policy: can manage and replace the updates of the instances in the Auto Scaling group
-   - Stack:
-    - Collection of AWS resources and can be managed in a single unit
-    - CloudFormation's template defines a stack in which the resources can be created, deleted, or updated in a predictable way
-    - Nested Stack: hierarchy of stacks, can create nested stack within another stack
-    - Windows Stack: can run windows instances (pre-configured template)
-    - Stack sets: lets you create stack in AWS accounts across the globe by using single template
+ - Templates:
+  - Formatted text file in JSON or YAML language that describes your AWS infrastructure
+  - Use AWS CloudFormation Designer to create
+  - Consists of nine main objects:
+   - 1. Format Version: defines the capability of a template 
+   - 2. Description: any comments about the template is specified in the description
+   - 3. Metadata: used to provide further information using JSON or YAML objects
+   - 4. Parameters: customized, so each time you create or update your stack, parameter gives custom template runtime
+   - 5. Mapping: enables you to map keys to corresponding named value that you specify in conditional parameter
+   - 6. Conditions: used when you want to reuse the templates by creating resources in different context 
+   - 7. Transform: build simple declarative language for AWS CloudFormation and enables reuse of template components
+   - 8. Resource: declare the AWS resource that you want to create and specify in the stack (EC2, S3, etc)
+                : logical IF and name specified + optional additional information
+   - 9. Output: describes the output values that you can import into other stacks or the values that are returned when users view their own stack property
+   - Template Resource Attributes:
+    - Create Policy: used when you want to delay on resource configuration actions before proceeding with stack creation      
+    - Deletion Policy: preserving and backing up of resource is possible when its stack is deleted
+    - Depends On: any user can define the creation of a specific resource followed by another resource 
+    - Metadata: helps you associate a resource with structured data
+    - Update Policy: can manage and replace the updates of the instances in the Auto Scaling group
+    
+  - Stack:
+   - Collection of AWS resources and can be managed in a single unit
+   - CloudFormation's template defines a stack in which the resources can be created, deleted, or updated in a predictable way
+   - Nested Stack: hierarchy of stacks, can create nested stack within another stack
+   - Windows Stack: can run windows instances (pre-configured template)
+   - Stack sets: lets you create stack in AWS accounts across the globe by using single template
     
              
 ## Terraform
