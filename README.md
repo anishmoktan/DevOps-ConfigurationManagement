@@ -1,40 +1,40 @@
 # DevOps - Configuration Management
 - "Configuration management (CM) is a system engineering process for establishing and maintaining consistency of a product's performance, functional, and physical attributes with its requirements, design, and operational information throughout its life." https://www.upguard.com/blog/5-configuration-management-boss
 
-## Ansible
+# Ansible
 - Allows us to write code to install and deploy multiple servers consistently.
   - Instructions to automate IT setup
   - Configuration Management: consistency of all systems in the infrastructure is maintained 
   - Automatic Deployment: applications are deployed automatically on a variety of environments
   
-- Push Configuration Tool:
+## Push Configuration Tool:
   - Ansible is installed in the local machine server and it pushes configurations to the nodes (servers connected to the main local machine) through an SSH client
   - Local machines hold:
    - Modules: collections of configuration code files (also known as playbooks)
    - Inventory: document that groups the nodes under specific labels
     
-- Playbook:
+## Playbook:
   - The core where the architecture is defined, where instructions for configure nodes are written in YAML files
   - YAML files define the specific tasks for each node to configure the desired state
     
-- Inventory: 
+## Inventory: 
   - Maintains the structure of the nodes' environment by classifying nodes into groups (manages physical hardware)
   - Hostnames of the nodes are specified under the group name
 
   
-## AWS CloudFormation
+# AWS CloudFormation
 - AWS CloudFormation provides users with a simple way to create and manage a collection of Amazon Web Services (AWS) resources by provisioning and updating them in a predictable way
 - It enables you to specify and manage the complete infrastructure or AWS resources in a reusable text file (YAML or JASON), without having to perform manual actions
 - To make templates reusable, we use parameters, mapping, and conditions sections in the template to customize stacks
 
-- How CloudFormation Works:
+## How CloudFormation Works:
   - Create or use existing CloudFormation template using JSON/YAML file
   - Save your code template locally or in S3 bucket
   - Use CloudFormation to create a stack on your template
   - AWS CloudFormation constructs and configures your stack resources that you have specified in your template
   
-- Two Major Components: Template and Stack
- - Templates:
+## Two Major Components: Template and Stack
+ ### Templates:
   - Formatted text file in JSON or YAML language that describes your AWS infrastructure
   - Use AWS CloudFormation Designer to create
   - Consists of nine main objects:
@@ -55,7 +55,7 @@
     - Metadata: helps you associate a resource with structured data
     - Update Policy: can manage and replace the updates of the instances in the Auto Scaling group
     
-  - Stack:
+  ###  Stack:
    - Collection of AWS resources and can be managed in a single unit
    - CloudFormation's template defines a stack in which the resources can be created, deleted, or updated in a predictable way
    - Nested Stack: hierarchy of stacks, can create nested stack within another stack
@@ -63,4 +63,4 @@
    - Stack sets: lets you create stack in AWS accounts across the globe by using single template
     
              
-## Terraform
+# Terraform
