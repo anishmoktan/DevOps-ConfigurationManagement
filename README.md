@@ -63,4 +63,4 @@
    - Stack sets: lets you create stack in AWS accounts across the globe by using single template
     
              
-# Terraform
+# Terraform by HashiCorp
